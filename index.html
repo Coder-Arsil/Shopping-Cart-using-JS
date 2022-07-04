@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Form Design</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="outer d-none animate__animated animate__fadeIn" id="form-1">
+            <div class="circle-up">
+                <div class="circle"></div>
+            </div>
+            <hr />
+            <div class="middle-section d-flex" id="middle">
+                <h1 class="text-light mt-4" align="center">Register Now !</h1>
+                <div class="input-group mt-4 w-75">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-user"></i>&nbsp;
+                    </span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1" spellcheck="false" id="s_username" >
+                </div>
+                <div class="input-group mt-3 w-75">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email id" aria-label="Email id"
+                        aria-describedby="basic-addon1" spellcheck="false" id="s_email">
+                </div>
+                <div class="input-group mt-3 w-75">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-eye-slash"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="********" aria-label="********"
+                        aria-describedby="basic-addon1" spellcheck="false" id="s_password">
+                </div>
+                <button type="button" id="signup_btn" class=" mt-4 my-3 btn btn-outline-primary"><i class="fa fa-user-plus"></i> Signup</button>
+
+                <div class="links mt-2">
+                    <button class="social mx-2"><i class="fa fa-facebook"></i></button>
+                    <button class="social mx-2"><i class="fa fa-twitter"></i></button>
+                    <button class="social mx-2"><i class="fa fa-instagram"></i></button>
+                </div>
+                <p class="log-click text-primary mt-3" id="go_signin"><i class="fa fa-sign-out"></i> Already have an acount ? </p>
+            </div>
+            <div class="process d-none d-flex justify-content-center align-items-center" style="flex-direction: column;" id="pro">
+                <i class="fa fa-check-circle text-success animate__animated animate__flipInY animate__infinite" style="font-size:150px;margin-top: 70px;"></i>
+                <h5 class="mt-4 text-success">Registration Success</h5>
+            </div>
+        </div>
+
+
+        <div class="outer animate__animated animate__fadeIn" id="form-2">
+            <div class="circle-up">
+                <div class="circle"></div>
+            </div>
+            <hr />
+            <div class="middle-section d-flex">
+                <h1 class="text-light mt-4" align="center">Sign in</h1>
+
+                <div class="input-group mt-3 w-75">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email id" aria-label="Email id"
+                        aria-describedby="basic-addon1" spellcheck="false" id="l_email">
+                </div>
+                <div class="input-group mt-3 w-75">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa fa-eye-slash"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="********" aria-label="********"
+                        aria-describedby="basic-addon1" spellcheck="false" id="l_pass">
+                </div>
+                <button id="login_btn" type="button" class=" mt-4 my-3 btn btn-outline-success"><i class="fa fa-key"></i> Sign In now</button>
+
+                <div class="links mt-4">
+                    <button class="social mx-2"><i class="fa fa-facebook"></i></button>
+                    <button class="social mx-2"><i class="fa fa-twitter"></i></button>
+                    <button class="social mx-2"><i class="fa fa-instagram"></i></button>
+                </div>
+                <p class="log-click text-primary mt-4" id="go_signup"><i class="fa fa-sign-out"></i> Create new acount ? </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

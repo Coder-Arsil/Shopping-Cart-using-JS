@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <link rel="stylesheet" href="style/profile.css">
+    <link rel="stylesheet" href="style/products.css">
+    <script src="js/items.js" defer></script>
+    <script src="js/profile.js" defer></script>
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="d-flex conatiner bg-light text-dark py-3 px-4 align-items-center " id="top-dailey">
+        <div class="nav-1">
+            <h1 style="font-family: times new roman;font-weight:bold;font-size: 20px;padding-left: 24%;"> # DAILY.</h1>
+        </div>
+        <div class="nav-2"> 
+            <div class="upper bg-light">
+                <input spellcheck="false" type="search" placeholder="search" size="30" style="background: transparent;" /><button><i class="fa fa-search"></i></button>
+            </div>
+            <div>
+                <i class="fa fa-shopping-cart"></i>
+                <span id="items">3</span>
+            </div>
+            <div>
+                <i class="fa fa-bars"></i>
+            </div>
+            
+        </div>
+    </div>
+    <section class="container-fluid mt-0">
+        <div class="col1">
+            <h2 style="margin-top: 20px;font-family:Tiro Bangla;font-weight:bold;">Shopping Cart</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                </tr>
+                <tr style="border-top:1px solid rgb(245, 245, 245);border-bottom:1px solid rgb(245, 245, 245);" id="row1" class="d-none">
+                    <td>
+                        <img src="images/p1.jpg" width="100" />
+                        <b>Titan Watch</b>
+                        <p class="off">50% off</p>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <nav>
+                        <button id="dec1">-</button>
+                        <button style="width:25px !important;background-color: white;" id="q1">1</button>
+                        <button id="inc1">+</button>   
+                        </nav>
+                    </td>
+                    <td>
+                        100.00
+                    </td>
+                    <td>
+                        <i class="fa fa-close text-secondary" id="cl1"></i>
+                    </td>
+                </tr> 
+                <tr style="border-top:1px solid rgb(245, 245, 24)rgb(245, 245, 245);border-bottom:1px solid rgb(245, 245, 24rgb(245, 245, 245))" id="row2" class="d-none">
+                    <td>
+                        <img src="images/p6.jpg" width="100" />
+                        <b>Rado Watch</b>
+                        <p class="off">30% off</p>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <nav>
+                        <button id="dec2">-</button>
+                        <button style="width:25px !important;background-color: white;" id="q2">1</button>
+                        <button id="inc2">+</button>   
+                        </nav>
+                    </td>
+                    <td>
+                        150.00 
+                    </td>
+                    <td>
+                        <i class="fa fa-close text-secondary" id="cl2"></i>
+                    </td>
+                </tr> 
+                <tr style="border-top:1px solid rgb(245, 245, 245);border-bottom:1px solid rgb(245, 245, 245)" id="row3" class="d-none">
+                    <td>
+                        <img src="images/p3.jpg" width="100" />
+                        <b>Rolex Watch</b>
+                        <p class="off">25% off</p>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <nav>
+                        <button id="dec3">-</button>
+                        <button style="width:25px !important;background-color: white;" id="q3">1</button>
+                        <button id="inc3">+</button>   
+                        </nav>
+                    </td>
+                    <td>
+                        300.00
+                    </td>
+                    <td>
+                        <i class="fa fa-close text-secondary" id="cl3"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td><br /><b>Subtotal &nbsp;: </b></td>
+                    <td><br /><span><i class="fa fa-rupee"></i> </span><span id="subtotal">0</span></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td ><b>Shipping : </b><br><br><hr></td>
+                    <td><span><i class="fa fa-rupee"></i> 0<br><br><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div style="margin-left:20px">
+                            <span id="valid" class="d-none text-success"><small>You will get a discount of Rs.100</small></span>
+                            <span id="invalid" class="d-none text-danger"><small>
+                                Invalid Coupan code !
+                            </small></span>
+                        </div>
+                        <div class="coupon">
+                        <input id="coupon" /><button id="apply">Apply Coupon</button>
+                        </div>
+                    </td>
+                    <td class="r8"><b>Total : </b></td>
+                    <td><span><i class="fa fa-rupee"></i><span id="total"> 0</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col2">
+            <div class="inside-box text-light">
+                <h2 style="font-weight:bold;font-family:Tiro Bangla;">Payment Info.</h2>
+                <hr class="text-secondary">
+                <div class="mid-section mt-2 ">
+                    <p>Payment method</p>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <button id="crd"><i class="fa fa-credit-card"></i> Credit Card</button>
+                    <button id="pay"><i class="fa fa-paypal"></i> <i>PayPal</i></button>
+                    </div>
+                    <hr class="text-secondary my-3">
+                    <p>Name on Credit : </p>
+                    <input type="text">
+                    <p class="mt-3">Card Number : </p>
+                    <input type="text" class="sm_input" id="s1">
+                    <input type="text" class="sm_input" id="s2">
+                    <input type="text" class="sm_input" id="s3">
+                    <input type="text" class="sm_input" id="s4">
+                    <p class="mt-3">Expiration Date : <span style="margin-left:130px;"><small>CVV</small></span></p>
+                    <select class="mm">
+                        <option>MM</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <select class="mm">
+                        <option>YYYY</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                    </select>
+                    <input type="text" class="sm_input pb-1">
+                    <center>
+                        <div class="check">
+                            Check Out.
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

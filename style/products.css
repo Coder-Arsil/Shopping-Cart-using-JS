@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Tiro+Bangla&display=swap');
+
+section {
+
+    height: 500px;
+    display: flex;
+}
+
+section .col1 {
+    width: 60%;
+    height: 400px !important;
+    padding: 0px 50px;
+}
+
+section .col2 {
+    width: 35%;
+    height: 100%;
+}
+
+table {
+    width: 85%;
+   
+}
+
+table tr th {
+    padding: 20px 0px;
+    font-family: calibri;
+    font-size: 12px;
+    /* font-size: 12px !important; */
+}
+
+img{
+    height: 65px;
+    width: 75px;
+}
+
+table td {
+    font-size: 14px;
+    padding: 0 1px;
+    /* font-size: 10px !important; */
+}
+
+td nav button {
+    width: 20% !important;
+    border: none;
+    margin: -3px;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+nav {
+    margin: 0;
+}
+
+select {
+    border: 1px solid rgb(245, 245, 245);
+}
+.col1{
+    margin-left: 10% !important;
+}
+.col2 {
+    margin-left: -150px;
+    background: -moz-linear-gradient(86deg, rgba(0, 0, 0, 1) 22%, rgba(3, 1, 10, 1) 34%, rgba(19, 9, 56, 1) 86%, rgba(19, 9, 56, 1) 100%);
+    background: -webkit-linear-gradient(86deg, rgba(0, 0, 0, 1) 22%, rgba(3, 1, 10, 1) 34%, rgba(19, 9, 56, 1) 86%, rgba(19, 9, 56, 1) 100%);
+    background: -o-linear-gradient(86deg, rgba(0, 0, 0, 1) 22%, rgba(3, 1, 10, 1) 34%, rgba(19, 9, 56, 1) 86%, rgba(19, 9, 56, 1) 100%);
+    background: -ms-linear-gradient(86deg, rgba(0, 0, 0, 1) 22%, rgba(3, 1, 10, 1) 34%, rgba(19, 9, 56, 1) 86%, rgba(19, 9, 56, 1) 100%);
+    background: linear-gradient(4deg, rgba(0, 0, 0, 1) 22%, rgba(3, 1, 10, 1) 34%, rgba(19, 9, 56, 1) 86%, rgba(19, 9, 56, 1) 100%);
+    width: 25% !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px 15px;
+    color: white;
+}
+
+.mid-section button{
+    background: transparent !important;
+    color: white;
+    font-weight: bold;
+    width: 45%;
+    font-size: 15px;
+    height: 45px;
+    margin-right: 0px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#crd{
+    font-size: 11px;
+
+}
+#pay{
+    border: 1px solid gray !important;
+    
+}
+.mid-section p{
+    font-size: 10px;
+    margin: 10px 0;
+}
+.mid-section input{
+    background-color: transparent;
+    outline: none;
+    width:100%;
+    border:none;
+    font-size: 13px;
+    color: white;
+    border-bottom: 1px solid rgb(43, 43, 43);
+}
+.off{
+    color: gray;
+    font-size: 8px;
+    position: relative;
+    top: -25px;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+}
+.fa-close{
+    color: lightgray !important;
+}
+.fa-close:hover{
+    color: black !important;
+    cursor: pointer;
+}
+.r8{
+    padding-left: 25px !important;
+}
+.coupon{
+    width: 80%;
+    height: 100%;
+    padding: 0 20px;
+}
+.coupon input{
+    border: none;
+    background: lightgray;
+    padding: 0 5px;
+    outline: none;
+}
+.coupon  button{
+    border: 0;
+    outline: none;
+    padding: 0 5px;
+    font-weight: 100;
+    color: white;
+    background: green;
+    transition: 0.4s;
+    -webkit-transition: 0.;
+    -moz-transition: 0.;
+    -ms-transition: 0.;
+    -o-transition: 0.;
+}
+.coupon  button:hover{
+    background-color: #00ff00;
+}
+.sm_input{
+    width: 23.9% !important;
+}
+.mm{
+    background: transparent;
+    width: 25%;
+    color: gray;
+    border: none;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    padding-bottom: 5px;
+    margin-right: 20px;
+}
+.check{
+    background-color: #0B5ED7 !important;
+    width: 80%;
+    font-weight: bold;
+    font-family: calibri;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-top: 50px;
+}
+/* #top-dailey{
+    border: 1px solid red;
+    display: flex;
+    padding: 0 55px !important;
+} */
+/* .nav-1{
+    padding-left: 13%;
+} */
